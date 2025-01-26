@@ -1,0 +1,13 @@
+resources:
+  pipelines:
+    pipeline_turbines_dlt:
+      name: turbines_dlt
+      libraries:
+        - notebook:
+            path: /Repos/src/turbines-dlt-pipeline
+      target: bronze
+      development: true
+      photon: false
+      catalog: main
+      serverless: true
+      data_sampling: false

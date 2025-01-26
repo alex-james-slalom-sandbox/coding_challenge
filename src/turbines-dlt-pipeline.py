@@ -2,6 +2,7 @@
 import dlt
 from pyspark.sql.functions import *
 
+# ideally I would read custom rules in from a file and make this dynamic
 complete_records = {"complete_data": "wind_speed is not null and wind_direction is not null and power_output is not null"}
 
 @dlt.table(comment="complete raw turbines data")
